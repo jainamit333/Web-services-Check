@@ -14,11 +14,11 @@ def index():
 
     return 'CMS : cms , Dhruv : dhruv , drools : drools'
 
-@app.route('/cms')
-def cms():
+@app.route('/<type>')
+def cms(type):
 
     result = {}
-    with open(os.path.join(APP_STATIC, 'cms.json')) as f:
+    with open(os.path.join(APP_STATIC, type+'.json')) as f:
         json_file = f.read()
         json_file = json.loads(json_file)
         headers = json.loads(json_file['header'])
@@ -28,7 +28,7 @@ def cms():
             response = requests.request("POST", url, data=payload, headers=headers)
             result[url] = response
 
-        return render_template('cms.html',result=result);
+        return render_template('result.html',result=result);
 
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0')
