@@ -1,0 +1,29 @@
+{
+  "header":"{\"content-type\": \"application/json\",\"accept\": \"application/json\",\"cache-control\": \"no-cache\",\"postman-token\": \"842279da-460a-611b-030f-26347cdda68e\"}",
+  "payload":[
+    {
+      "url":"http://10.96.41.86/cms-service/credentialDetail",
+      "pay":"{\"OfficeID\":\"MPEXINDIA\"}"
+
+    },
+    {
+      "url":"http://10.96.41.87/cms-service/credentialDetail",
+      "pay":"{\"OfficeID\":\"MPEXINDIA\"}"
+
+    },
+    {
+      "url":"http://10.96.41.88/cms-service/credentialDetail",
+      "pay":"{\"OfficeID\":\"MPEXINDIA\"}"
+    },
+    {
+      "url":"http://10.96.41.89/cms-service/credentialDetail",
+      "pay":"{\"OfficeID\":\"MPEXINDIA\"}"
+    },
+    {
+      "url":"http://10.96.41.86/cms-service/credentialDetail",
+      "pay":"{\"OfficeID\":\"MPEXINDIA\"}"
+    }
+
+  ]
+
+}
